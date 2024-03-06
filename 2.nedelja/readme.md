@@ -17,7 +17,7 @@
 
 			...
 			#bitno:
-				#mogu da se koriste klasni atributi navođenjem cls.cls_atribut1 ili cls.cls_atribut2
+				#mogu da se koriste klasni atributi navođenjem self.cls_atribut1 ili self.cls_atribut2
 				#mogu da se koriste atributi instance navođenjem self.atribut1, self.atribut2, ...
 				#upotreba 
 				   #instanca.metod1(arg1, arg2, ..., argN) 
@@ -31,8 +31,8 @@
 				#ne mogu da se koriste atributi instance (atribut1, atribut2 ili atribut3)
 				
 				#upotreba 
-				   # ImeKlase.metod3(arg1, arg2, ..., argN) ili
-				   # instanca.metod3(arg1, arg2, ..., argN) 
+				   # ImeKlase.metod2(arg1, arg2, ..., argN) ili
+				   # instanca.metod2(arg1, arg2, ..., argN)
 
 	
 		@staticmethod
@@ -104,7 +104,7 @@
 		
 			super().__init__(arg1,arg2)
 			# ili
-			# BaznaKlasa.__init__(arg1, arg2)
+			# BaznaKlasa.__init__(self,arg1, arg2)
 			
 			self.atribut3=arg3    
 			self.atribut4=arg4
