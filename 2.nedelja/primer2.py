@@ -13,7 +13,10 @@ class Osoba:
         dan = self.jmbg[:2]
         mesec = self.jmbg[2:4]
         godina = self.jmbg[4:7]
-        godina = '2' + godina if godina[0] == '0' else '1' + godina
+        if godina[0] == '0':
+            godina = '2' + godina
+        else:
+            godina = '1' + godina
 
         return f'{dan}.{mesec}.{godina}.'
 
@@ -41,7 +44,7 @@ class Student(Osoba):
         opis=""
         for i in self.ispiti: #prolazak kroz listu ispita
 
-            if i[1]>=6:
+            if i[1] >= 6:
                 opis += f"Predmet: {i[0]}, ocena: {i[1]}\n"
 
         if opis=="":
