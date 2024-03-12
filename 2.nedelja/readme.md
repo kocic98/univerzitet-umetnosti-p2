@@ -195,7 +195,7 @@
 	* koja od atributa za instance sadrži:
 	 	* **prevodilac** - ime prevodioca
 	 	* **oblast** - oblast na koju se odnosi prevod
-		* **brojStrana** - vroj prevedenih strana 
+		* **brojStrana** - broj prevedenih strana
 		* **popust**  
 	* koja od klasnih atributa sadrži:
 	 	* **cenaPoStrani** - cena za prevođenje jedne strane iznosi 2000 RSD
