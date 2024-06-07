@@ -28,20 +28,21 @@ class objekat(pygame.sprite.Sprite):
         x = random.randint(0,velicina_prozora[1]-50)
         y = random.randint(0,velicina_prozora[0]-50)
         self.rect = self.image.get_rect(topleft=(x,y))
-        a = random.randint(0,5)
+        a = random.randint(1,5)
         self.speed = (a,5-a)
     def update(self):
-        if self.rect.bottom > velicina_prozora[1]:
-            self.speed = (self.speed[0],-self.speed[1])
+        a = random.randint(1,5)
+        if self.rect.bottom >= velicina_prozora[1]:
+            self.speed = (self.speed[0],-a)
             self.rect.bottom = velicina_prozora[1]
-        if self.rect.right > velicina_prozora[0]:
-            self.speed = (-self.speed[0],self.speed[1])
+        if self.rect.right >= velicina_prozora[0]:
+            self.speed = (-a,self.speed[1])
             self.rect.right = velicina_prozora[0]
-        if self.rect.left < 0:
-            self.speed = (-self.speed[0],self.speed[1])
+        if self.rect.left <= 0:
+            self.speed = (a,self.speed[1])
             self.rect.left = 0
-        if self.rect.top < 0:
-            self.speed = (self.speed[0],-self.speed[1])
+        if self.rect.top <= 0:
+            self.speed = (self.speed[0],a)
             self.rect.top = 0
         self.rect.move_ip(self.speed)
     
