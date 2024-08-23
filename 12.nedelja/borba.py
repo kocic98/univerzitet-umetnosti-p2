@@ -13,6 +13,7 @@ sat = pygame.time.Clock()
 class objekat(pygame.sprite.Sprite):
     def __init__(self,tip) -> None:
         super().__init__()
+        self.tip = tip
         self.image = pygame.Surface((50,50))
         self.image.fill("black")
         if tip == 'kamen':
@@ -28,8 +29,16 @@ class objekat(pygame.sprite.Sprite):
         x = random.randint(0,velicina_prozora[1]-50)
         y = random.randint(0,velicina_prozora[0]-50)
         self.rect = self.image.get_rect(topleft=(x,y))
-        a = random.randint(1,5)
-        self.speed = (a,5-a)
+        a = random.randint(1,3)
+        self.speed = (a,3-a)
+    def promeni_sliku(self,slika):
+        self.image= pygame.image.load(slika)
+        self.image = pygame.transform.scale(self.image,(50,50))
+        self.image.set_colorkey("white")
+        self.image.convert_alpha()
+        self.promeni_smer()
+    def promeni_smer(self):
+        self.speed = (-self.speed[0],-self.speed[1])
     def update(self):
         a = random.randint(1,5)
         if self.rect.bottom >= velicina_prozora[1]:
@@ -45,6 +54,10 @@ class objekat(pygame.sprite.Sprite):
             self.speed = (self.speed[0],a)
             self.rect.top = 0
         self.rect.move_ip(self.speed)
+    def kill(self):
+        pass
+
+
     
 makaze = pygame.sprite.Group()
 papir = pygame.sprite.Group()
@@ -72,9 +85,26 @@ while running:
             running = False
     svi.update()
     svi.draw(ekran)
-    pygame.sprite.groupcollide(kamen,makaze,False,True)
-    pygame.sprite.groupcollide(makaze,papir,False,True)
-    pygame.sprite.groupcollide(papir,kamen,False,True)
+    for i in kamen:
+        if pygame.sprite.spritecollide(i,papir,False):
+            kamen.remove(i)
+            i.promeni_sliku("papir.png")
+            papir.add(i)
+    for i in papir:
+        if pygame.sprite.spritecollide(i,makaze,False):
+            papir.remove(i)
+            i.promeni_sliku("makaze.png")
+            makaze.add(i)
+        
+    for i in makaze:
+        if pygame.sprite.spritecollide(i,kamen,False):
+            makaze.remove(i)
+            i.promeni_sliku("kamen.png")
+            kamen.add(i)
+    
+    # pygame.sprite.groupcollide(kamen,makaze,False,True)
+    # pygame.sprite.groupcollide(makaze,papir,False,True)
+    # pygame.sprite.groupcollide(papir,kamen,False,True)
     if len(kamen.sprites())==0:
         pobednik = pygame.image.load("makaze.png")
         running = False
