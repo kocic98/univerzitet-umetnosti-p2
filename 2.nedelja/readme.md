@@ -84,7 +84,7 @@
 # Nasleđivanje 
 	
 
-
+```python
 	class BaznaKlasa:
 	
 		
@@ -129,7 +129,7 @@
 	objekat.metod1()
 	objekat.metod2()
 	
-	
+```
 
 
 2. Napraviti klasu 
