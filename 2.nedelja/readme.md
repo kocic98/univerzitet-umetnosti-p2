@@ -79,7 +79,7 @@
 
 	* **godinaIzIndeksa** - koji kao rezultat vraća godinu upisa na fakultet za studenta čiji je indeks prosleđen kao argument ovom metodu
 
-
+* [Resenje](./primer1.py)
 
 # Nasleđivanje 
 	
@@ -175,7 +175,7 @@
 	* dva objekat klase **Student** 
 	* dva objekat klase **Nastavnik**
   i primeniti njihove metoda 
-	
+* [Resenje](./primer2.py)
 
 3. Napraviti klasu **Pitanje** koja opisuje jedno pitanje u Kvizu. 
 * Od atributa klasa sadrži atribut za pitanje, po jedan atribut za 4 moguća odgovora i atribut za redni broj tačnog odgovora. 
@@ -186,8 +186,10 @@
 * Napraviti objekat klase **Pitanje**
 
 * Napraviti listu pitanja za kviz primenom klase **Pitanje** i simulirati kviz.
-4. Napraviti klasu za kviz primenom klase **Pitanje** i simulirati kviz.
+* [Resenje](./primer3.py)
 
+4. Napraviti klasu za kviz primenom klase **Pitanje** i simulirati kviz.
+* [Resenje](./primer4.py)
 
 # Za vežbu
 
