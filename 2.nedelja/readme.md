@@ -57,29 +57,29 @@
 ```
 
 1. Napraviti klasu **Student** koja opisuje studente.
-* Od atributa sadrži:
-	* atribute koji opisuju instance
-	 	* **ime**
-	 	* **prezime**
-		* **indeks**  (koji se zadaje kao ceo broj  u obliku GGGGXXXX, gde je GGGG grodina upisa na fakultet, a XXXX jedinstven broj studenta na nivou godine, npr. 20210256)
-	* **prosek** koji kao podrazumevanu vrednost ima 0
-	* klasni atribut
-		* **univerzitet** koji ima vrednost *Univerzitet umetnosti*
-		 
-* Napisati konstruktor za klasu.
-* Obezbediti metode za instance:
-  * **formatiranIndeks** - koja vraća broj indeksa u obliku XXXX/GGGG
-  * metod za predstavljanje objekta klase kao niske
+	* Od atributa sadrži:
+		* atribute koji opisuju instance
+			* **ime**
+			* **prezime**
+			* **indeks**  (koji se zadaje kao ceo broj  u obliku GGGGXXXX, gde je GGGG grodina upisa na fakultet, a XXXX jedinstven broj studenta na nivou godine, npr. 20210256)
+		* **prosek** koji kao podrazumevanu vrednost ima 0
+		* klasni atribut
+			* **univerzitet** koji ima vrednost *Univerzitet umetnosti*
 
-* Obezbediti klasni metod:
+	* Napisati konstruktor za klasu.
+	* Obezbediti metode za instance:
+	* **formatiranIndeks** - koja vraća broj indeksa u obliku XXXX/GGGG
+	* metod za predstavljanje objekta klase kao niske
 
-	* **kontakt** - koji kao rezultat vraća nisku koja sadrži naziv univerziteta i adresu univerziteta
+	* Obezbediti klasni metod:
 
-* Obezbediti statički metod:
+		* **kontakt** - koji kao rezultat vraća nisku koja sadrži naziv univerziteta i adresu univerziteta
 
-	* **godinaIzIndeksa** - koji kao rezultat vraća godinu upisa na fakultet za studenta čiji je indeks prosleđen kao argument ovom metodu
+	* Obezbediti statički metod:
 
-* [Resenje](./primer1.py)
+		* **godinaIzIndeksa** - koji kao rezultat vraća godinu upisa na fakultet za studenta čiji je indeks prosleđen kao argument ovom metodu
+
+	* [Resenje](./primer1.py)
 
 # Nasleđivanje 
 	
@@ -133,63 +133,63 @@
 
 
 2. Napraviti klasu 
-* **Osoba**
-	* Od atributa klasa sadrži:
-	 	* **ime**
-	 	* **prezime**
-		* **jmbg** 
-		* **kontakt**  koji sadrži broj telefona 
+	* **Osoba**
+		* Od atributa klasa sadrži:
+			* **ime**
+			* **prezime**
+			* **jmbg**
+			* **kontakt**  koji sadrži broj telefona
+		* Napisati konstruktor za klasu.
+		* Obezbediti metode:
+		* **datumRodjenja** - vraća datum rođenja u obliku DD.MM.GGGG.
+		* metod za predstavljanje objekta klase kao niske
+
+	* **Student** koja nasleđuje klasu **Osoba**
+		* Od atributa klasa sadrži:
+			* **indeks**  - zadaje se kao ceo broj  u obliku GGGGXXXX, gde je GGGG grodina upisa na fakultet, a XXXX jedinstven broj studenta na nivou godine, npr. 20210256)
+			* **ispiti** - sadrži listu ispita studenta. Svaki element liste sadrži naziv predmeta koji je student polagao i ocenu koju je student dobio na ispitu.
 	* Napisati konstruktor za klasu.
 	* Obezbediti metode:
-	  * **datumRodjenja** - vraća datum rođenja u obliku DD.MM.GGGG.
-	  * metod za predstavljanje objekta klase kao niske
 
-* **Student** koja nasleđuje klasu **Osoba**
-	* Od atributa klasa sadrži:
-		* **indeks**  - zadaje se kao ceo broj  u obliku GGGGXXXX, gde je GGGG grodina upisa na fakultet, a XXXX jedinstven broj studenta na nivou godine, npr. 20210256)
-	 	* **ispiti** - sadrži listu ispita studenta. Svaki element liste sadrži naziv predmeta koji je student polagao i ocenu koju je student dobio na ispitu. 
-* Napisati konstruktor za klasu.
-* Obezbediti metode:
+	* **formatiranIndeks** - vraća broj indeksa u obliku XXXX/GGGG
+	* **dodajIspit** - u listu ispita dodaje podatak o novom ispitu koji je student polagao
+	* **polozeniIspiti** - vraća nisku koja sadrži podatke o položenim ispitima
+	* **prosek** - vraća prosečnu ocenu studenta dobijenu na položenim ispitima
+	* metod za predstavljanje objekta klase kao niske
 
-  * **formatiranIndeks** - vraća broj indeksa u obliku XXXX/GGGG
-  * **dodajIspit** - u listu ispita dodaje podatak o novom ispitu koji je student polagao 
-  * **polozeniIspiti** - vraća nisku koja sadrži podatke o položenim ispitima
-  * **prosek** - vraća prosečnu ocenu studenta dobijenu na položenim ispitima
-  * metod za predstavljanje objekta klase kao niske
+	* **Nastavnik** koja nasleđuje klasu **Osoba**
+		* Od atributa klasa sadrži:
+			* **zvanje**
+			* **koeficijent**
 
-* **Nastavnik** koja nasleđuje klasu **Osoba**
-	* Od atributa klasa sadrži:
-		* **zvanje**   	
-		* **koeficijent** 
-	 
-* Napisati konstruktor za klasu.
-* Obezbediti metode:
+	* Napisati konstruktor za klasu.
+	* Obezbediti metode:
 
-  * **plata** - vraća visinu plate nastavnika koja se računa prema izrazu koeficijent*3,5
-  * metod za predstavljanje objekta klase kao niske
+	* **plata** - vraća visinu plate nastavnika koja se računa prema izrazu koeficijent*3,5
+	* metod za predstavljanje objekta klase kao niske
 
 
 
-* Napraviti 
-	* dva objekat klase **Osoba** 
-	* dva objekat klase **Student** 
-	* dva objekat klase **Nastavnik**
-  i primeniti njihove metoda 
-* [Resenje](./primer2.py)
+	* Napraviti
+		* dva objekat klase **Osoba**
+		* dva objekat klase **Student**
+		* dva objekat klase **Nastavnik**
+	i primeniti njihove metoda
+	* [Resenje](./primer2.py)
 
 3. Napraviti klasu **Pitanje** koja opisuje jedno pitanje u Kvizu. 
-* Od atributa klasa sadrži atribut za pitanje, po jedan atribut za 4 moguća odgovora i atribut za redni broj tačnog odgovora. 
-* Napisati konstruktor za klasu.
-* Obezbediti metode:
-  * **postaviPitanje** - ispisuje pitanje i moguće odgovore
-  * **proveriOdgovor** - proverava da li je zadati odgovor tačan ili ne i vraća True ako jeste, a False ako nije.
-* Napraviti objekat klase **Pitanje**
+	* Od atributa klasa sadrži atribut za pitanje, po jedan atribut za 4 moguća odgovora i atribut za redni broj tačnog odgovora.
+	* Napisati konstruktor za klasu.
+	* Obezbediti metode:
+	* **postaviPitanje** - ispisuje pitanje i moguće odgovore
+	* **proveriOdgovor** - proverava da li je zadati odgovor tačan ili ne i vraća True ako jeste, a False ako nije.
+	* Napraviti objekat klase **Pitanje**
 
-* Napraviti listu pitanja za kviz primenom klase **Pitanje** i simulirati kviz.
-* [Resenje](./primer3.py)
+	* Napraviti listu pitanja za kviz primenom klase **Pitanje** i simulirati kviz.
+	* [Resenje](./primer3.py)
 
 4. Napraviti klasu za kviz primenom klase **Pitanje** i simulirati kviz.
-* [Resenje](./primer4.py)
+	* [Resenje](./primer4.py)
 
 # Za vežbu
 

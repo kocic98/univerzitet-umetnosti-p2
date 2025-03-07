@@ -1,7 +1,7 @@
 # Pygame
 
 
-```
+```python
 import pygame #uvoz biblioteke
 
 pygame.init()  
@@ -89,7 +89,7 @@ pygame.quit()
 
 ## Petlja igrice
 
-```
+```python
 running = True
 
 while running:
@@ -106,16 +106,17 @@ while running:
 
 ## Zadatak 
 1. Napraviti igru **Pamćenje** u kojoj korisnik traži kartice sa istim brojevima. Potrebno je da prozor igrice izgleda kao na slici. Obezbediti sledeće funkcionalnosti u igrici:
-* Na ekranu se prikazuje tabela veličine 4x4. 
-* Za svako polje je vezan jedan broj. 
-* Inicijalno su sva polja tabele *zatvorena*, tj. umesto njihovih brojeva prikazuje se karakter *.
-* Cilj je pronaći polja, tj. par sa istim brojem.
-* Korisnik bira po dva polja. 
-* Kada se klikne na polje  prikazuje se dodeljen broj.
-* Ukoliko su izabrana polja sa istim brojem, polja se *otvaraju*, tj. par je pogođen i u ostatku igre ostaju prikazani brojevi tih polja. Ukoliko su izabrana polja sa različitim brojevima, polja se opet *zatvaraju* .
-* Prikazuje se tekst sa brojem parova koje je korisnik zadao.
-*   Kada korisnik klikne na dugme za zatvaranje prozora, prozor se zatvara.
-*  Kada korisnik pronađe sve parove brojeva na prozoru se ispisuje poruka *Čestitamo!*
+	* Na ekranu se prikazuje tabela veličine 4x4.
+	* Za svako polje je vezan jedan broj.
+	* Inicijalno su sva polja tabele *zatvorena*, tj. umesto njihovih brojeva prikazuje se karakter *.
+	* Cilj je pronaći polja, tj. par sa istim brojem.
+	* Korisnik bira po dva polja.
+	* Kada se klikne na polje  prikazuje se dodeljen broj.
+	* Ukoliko su izabrana polja sa istim brojem, polja se *otvaraju*, tj. par je pogođen i u ostatku igre ostaju prikazani brojevi tih polja. Ukoliko su izabrana polja sa različitim brojevima, polja se opet *zatvaraju* .
+	* Prikazuje se tekst sa brojem parova koje je korisnik zadao.
+	*   Kada korisnik klikne na dugme za zatvaranje prozora, prozor se zatvara.
+	*  Kada korisnik pronađe sve parove brojeva na prozoru se ispisuje poruka *Čestitamo!*
+	* [resenje](igraPamcenja/igraPamcenja3.py)
 
 ![image](./primer1.png)
 
@@ -131,7 +132,7 @@ while running:
 
 2. Proširiti igricu *Vešanje* sa prethodnog časa dodavanjem ograničenja da korisnik može da unese do 10 pogrešnih karaktera i obezbediti prikaz po jednog dela tela čikice za svaki zadati karakter koji se ne nalazi u reči za pogađanje.
 Redosled prikaza delova tela je: oblik glave, levo oko, desno oko, nos, usta, telo, leva ruka, desna ruka, leva noga, desna noga.
-
+	* [resenje](crtanje_cikice/primer2_3.py)
 ![image](./primer4.png)
 
 

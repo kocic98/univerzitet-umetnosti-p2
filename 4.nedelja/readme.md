@@ -1,25 +1,25 @@
 # Pygame
 
 
-```
-import pygame #uvoz biblioteke
+```python
+	import pygame #uvoz biblioteke
 
-pygame.init()  
+	pygame.init()
 
-SCREEN_WIDTH = 250
-SCREEN_HEIGHT = 60
+	SCREEN_WIDTH = 250
+	SCREEN_HEIGHT = 60
 
-#pravljenje prozora igrice
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT)) 
-screen.fill((255,255,255))  
-pygame.display.set_caption("Uvodni primer")
+	#pravljenje prozora igrice
+	screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+	screen.fill((255,255,255))
+	pygame.display.set_caption("Uvodni primer")
 
-pygame.display.update()
+	pygame.display.update()
 
-#cekanje odredjenog vremena pre zatvaranja prozora
-pygame.time.wait(5000) 
+	#cekanje odredjenog vremena pre zatvaranja prozora
+	pygame.time.wait(5000)
 
-pygame.quit()
+	pygame.quit()
 
 
 ```
@@ -89,7 +89,7 @@ pygame.quit()
 
 ## Petlja igrice
 
-```
+```python
 running = True
 
 while running:
@@ -108,18 +108,19 @@ while running:
 
 
 1. Napisati program koji pravi prozor veličine 250x60 i prikazuje tekst koji se unosi preko tastature. 
+	* [resenje](primer1.py)
 2. Napisati program koji pravi prozor veličine 250x60 i prikazuje tekst koji se unosi preko tastature. Obezbediti i prikaz teksta **Prekini**. Kada korisnik klikne na tekst **Prekini** prozor se zatvara.
-
+	* [resenje](primer2.py)
 3. Napraviti igru **Vešanje** u kojoj je potrebno da korisnik pogodi zadatu reč. Potrebno je da prozor igrice izgleda kao na slici
 
 ![image](./primer3.png)
 
 Obezbediti sledeće funkcionalnosti u igrici:
-* Reč za pogađanje (u primeru umetnost) se prvo prikazuje pomoću karaktera *, tj. prikazuje se karakter * onoliko puta koliko ima slova u reči za pogađanje. 
-* U prozoru se prikazuje svaki karakter koji korisnik unese preko tastature (na primeru *Uneto: s*).
-* Ukoliko zadati karakter postoji u reči za pogađanje, to slovo se i prikazuje umesto * u okviru prikaza reči za pogađanje.
-* Prikazuje se broj karaktera koje je korisnik zadao, a koje ne postoje u reči zadatoj za pogađanje, tj. prikazuje se broj promašaja.
-*  Obezbediti i prikaz teksta **Prekini**. Kada korisnik klikne na tekst **Prekini** prozor se zatvara.
-*   Kada korisnik klikne na dugme za zatvaranje prozora, prozor se zatvara.
-*  Kada korisnik pogodi reč na prozoru se ispisuje poruka *Čestitamo!*
-
+	* Reč za pogađanje (u primeru umetnost) se prvo prikazuje pomoću karaktera *, tj. prikazuje se karakter * onoliko puta koliko ima slova u reči za pogađanje.
+	* U prozoru se prikazuje svaki karakter koji korisnik unese preko tastature (na primeru *Uneto: s*).
+	* Ukoliko zadati karakter postoji u reči za pogađanje, to slovo se i prikazuje umesto * u okviru prikaza reči za pogađanje.
+	* Prikazuje se broj karaktera koje je korisnik zadao, a koje ne postoje u reči zadatoj za pogađanje, tj. prikazuje se broj promašaja.
+	*  Obezbediti i prikaz teksta **Prekini**. Kada korisnik klikne na tekst **Prekini** prozor se zatvara.
+	*   Kada korisnik klikne na dugme za zatvaranje prozora, prozor se zatvara.
+	*  Kada korisnik pogodi reč na prozoru se ispisuje poruka *Čestitamo!*
+	* [resenje](primer3.py)

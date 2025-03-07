@@ -20,37 +20,37 @@
 	* Obezbediti klasni metod:
 	
 		* **konvertuj** koji vrši konverziju zadate sume u RSD u željenu valutu i izračunatu vrednost vraća kao rezultat.  
-	
+	* [resenje](primer1.py)
 
 
 2. Napraviti klasu 
-* **Predstava**
-	* Od atributa klasa sadrži:
-	 	* **naziv**
-	 	* **premijera** - datum premijere
-		* **reditelj** 
-		* **izvodjaci**  - sadrži listu izvođača 
-	* Napisati konstruktor za klasu.
-	* Obezbediti metode:
-	  * **dodajIzvodjaca** 
-	  * **ispisiIzvodjace**
-	  * metod za predstavljanje objekta klase kao niske
+	* **Predstava**
+		* Od atributa klasa sadrži:
+			* **naziv**
+			* **premijera** - datum premijere
+			* **reditelj**
+			* **izvodjaci**  - sadrži listu izvođača
+		* Napisati konstruktor za klasu.
+		* Obezbediti metode:
+		* **dodajIzvodjaca**
+		* **ispisiIzvodjace**
+		* metod za predstavljanje objekta klase kao niske
 
-* **Drama** koja nasleđuje klasu **Predstava**
-	* Od atributa klasa sadrži:
-		* **pisac**  
-		* **dramaturg** 
-	* Napisati konstruktor za klasu.
-	* Obezbediti metod za predstavljanje objekta klase kao niske.
+	* **Drama** koja nasleđuje klasu **Predstava**
+		* Od atributa klasa sadrži:
+			* **pisac**
+			* **dramaturg**
+		* Napisati konstruktor za klasu.
+		* Obezbediti metod za predstavljanje objekta klase kao niske.
 
 
-* **Opera** koja nasleđuje klasu **Predstava**
-	* Od atributa klasa sadrži:
-		* **kompozitor**  
-		* **dirigent** 
-	* Napisati konstruktor za klasu.
-	* Obezbediti metod za predstavljanje objekta klase kao niske.
-
+	* **Opera** koja nasleđuje klasu **Predstava**
+		* Od atributa klasa sadrži:
+			* **kompozitor**
+			* **dirigent**
+		* Napisati konstruktor za klasu.
+		* Obezbediti metod za predstavljanje objekta klase kao niske.
+	* [resenje](primer2.py)
 
 
 
@@ -103,6 +103,6 @@ Napraviti klase:
 		  * metod za pristup određenoj kupovini preko njenog indeksa
 		
 		  * metod za predstavljanje objekta klase kao niske
-		
+	* [resenje](primer3.py)
 
 
