@@ -1,5 +1,5 @@
 # Klase 
-	
+```python
 	class ImeKlase:
 	
 		#definisanje članova klase - atributa i metoda
@@ -54,7 +54,7 @@
 
 	ImeKlase.metod3(arg1V, arg2V, ..., argNV)	
 	objekat.metod3(arg1V, arg2V, ..., argNV)	
-
+```
 
 1. Napraviti klasu **Student** koja opisuje studente.
 * Od atributa sadrži:
